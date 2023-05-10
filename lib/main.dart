@@ -23,11 +23,14 @@ class StatefulClassProvider extends StatefulWidget {
 class StreamClass extends State<StatefulClassProvider> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar:,
-      body:,
-      bottomNavigationBar:,
-
-    );
+return Scaffold(
+ appBar:AppBar(),
+  body: Container(
+    height: MediaQuery.of(context).size.height ,
+    width: MediaQuery.of(context).size.width ,
+    color:Colors.deepPurple,
+  ),
+  bottomNavigationBar: const BottomAppBar(),
+);
   }
 }
